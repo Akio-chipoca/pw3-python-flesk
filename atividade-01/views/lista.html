@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Jogos</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ff4d6d;
+    padding: 25px;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #ac5252;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff4d6d;
+}
+
+tr:nth-child(even) {
+    background-color: #944444;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+footer a {
+    color: #ff758f;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lista de Jogos 🎮</h1>
+</header>
+
+<div class="container">
+    <table>
+        <tr>
+            <th>Jogo</th>
+            <th>Gênero</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td>Shadow Legends</td>
+            <td>RPG</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Speed Horizon</td>
+            <td>Corrida</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Battle Arena X</td>
+            <td>Ação</td>
+            <td>9.5</td>
+        </tr>
+        <tr>
+            <td>Mystic Valley</td>
+            <td>Aventura</td>
+            <td>8.7</td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+    <a href="/">Voltar para Home</a>
+</footer>
+
+</body>
+</html>

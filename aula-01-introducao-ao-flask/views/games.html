@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+</head>
+<body>
+    <a href="/">voltar</a>
+    <h1>Bem-Vindo a pagina de games!</h1>
+    <h2>Jogo em destaque</h2>
+    <p>game mais jogado pelos usuarios: </p>
+    <ul>
+        <li>Titulo: <strong>{{titulo}}</strong> </li>
+        <li>Ano: <strong>{{ano}} </strong></li>
+        <li>Categoria: <strong>{{categoria}}</strong></li>
+        <li>O jogo {{titulo}} tem {{2026 - ano}} anos! </li>
+    </ul>
+    <h3>Top Players(Ranking de jogadores)</h3>
+    <ol>
+        {% for jogador in jogadores: %}
+        <li>{{jogador}}</li>
+        {% endfor %}
+    </ol>
+    <hr>
+</body>
+</html>

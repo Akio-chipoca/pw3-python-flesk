@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastrar Jogo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff4d6d;
+    padding: 25px;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+form {
+    background-color: #ac5252;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(45deg, #ff4d6d, #ff758f);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+footer a {
+    color: #ff758f;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cadastro de Jogo 🎮</h1>
+</header>
+
+<div class="container">
+    <form>
+        <h2>Novo Jogo</h2>
+        <input type="text" placeholder="Nome do jogo" required>
+        <input type="text" placeholder="Gênero" required>
+        <input type="number" placeholder="Nota (0-10)" min="0" max="10" required>
+        <textarea rows="4" placeholder="Sua avaliação"></textarea>
+        <button type="submit">Salvar Jogo</button>
+    </form>
+</div>
+
+<footer>
+    <a href="/">Voltar para Home</a>
+</footer>
+
+</body>
+</html>

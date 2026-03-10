@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">voltar</a>
+    <h1>Bem-Vindo a pagina de Consoles!</h1>
+    <hr>
+    <h2>Console em destaque: </h2>
+    {%for chave, valor in console.items()%}
+    <p>{{chave}} : {{valor}}</p>
+
+    <details>
+        <summary>{{chave}}</summary>
+        <p>{{valor}}</p>
+    </details>
+    {% endfor %}
+</body>
+</html>
