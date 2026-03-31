@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+<main>
+  <h1>Bem-Vindo ao The Music!</h1>
+  <h3>Seu site favorito de musicas!</h3>
+  <hr />
+  <img
+    src="{{url_for('static', filename='/imgs/image.png')}}"
+    alt="The Music"
+    width="720px"
+  />
+</main>
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% block content %}
+<main>
+  <h1>Bem-Vindo a pagina de infos!</h1>
+  <hr />
+  <h2>Informações em destaque:</h2>
+  {%for chave, valor in infos.items()%}
+
+  <details>
+    <summary>{{chave}}</summary>
+    <p>{{valor}}</p>
+  </details>
+  {% endfor %}
+
+  <h2>Lista de infos</h2>
+  <ol>
+     {% for c in listainfos %}
+     <li>{{ c }}</li>
+     {% endfor %}
+</ol>
+
+<form action="{{url_for('infos')}}", method="post">
+  <label>Nome do Console: </label>
+  <input type="text" name="novainfo">
+  <input type="submit" value="Cadastrar">
+</form>
+
+</main>
+{% endblock content %}
